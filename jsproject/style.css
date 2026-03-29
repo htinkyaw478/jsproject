@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 body {
@@ -96,6 +96,7 @@ p {
 
 #msg-3 {
     font-size: medium;
+    color: #fff;
 }
 
 #msg-1 {
