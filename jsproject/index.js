@@ -9,7 +9,7 @@ let btn_2 = document.getElementById("btn-2");
 let guessedNum = [];
 let chance = 10;
 let count = 0;
-let randomNumber = Math.floor(Math.random() * 30) + 1;
+let randomNumber = Math.floor(Math.random() * 50) + 1;
 console.log(randomNumber);
 
 let guess = () => {
@@ -41,7 +41,7 @@ let guess = () => {
   document.querySelector(".guess").value = "";
 };
 let restart = () => {
-  randomNumber = Math.floor(Math.random() * 30) + 1;
+  randomNumber = Math.floor(Math.random() * 50) + 1;
   console.log(randomNumber);
   chance = 10;
   count = 0;
@@ -49,6 +49,6 @@ let restart = () => {
   errMessage2.textContent = "ထပ်ကြိုးစားခွင့် : ";
   errMessage3.textContent = "ခန့်မှန်းပြီးတဲ့ number : ";
   errMessage1.textContent = "";
-  btn_1.disabled = "false";
+  btn_1.disabled = false ;
   document.querySelector(".guess").value = "";
 }
