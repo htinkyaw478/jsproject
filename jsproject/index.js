@@ -9,9 +9,18 @@ let btn_2 = document.getElementById("btn-2");
 let guessedNum = [];
 let chance =5;
 let count = 0;
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomNumber = Math.floor(Math.random() * 70) + 1;
 console.log(randomNumber);
 
+document.querySelector(".guess").addEventListener("keydown", function (event) {
+  // Check if the key pressed is "Enter"
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed (prevents form submission/page reload)
+    event.preventDefault();
+    // Trigger the button element with a click
+    guess();
+  }
+});
 let guess = () => {
   count += 1;
   chance -= 1;
@@ -23,8 +32,8 @@ let guess = () => {
     btn_1.disabled = "true";
     
   } else {
-    if (userGuess < 0 || userGuess > 100) {
-      errMessage1.textContent = `Please guess number is between 0 to 100`;
+    if (userGuess < 0 || userGuess > 70) {
+      errMessage1.textContent = `Please guess number is between 0 to 70`;
     } else if (userGuess > randomNumber) {
       errMessage1.textContent = `သင့်number က 'များ'နေပါတယ်။ထပ်ကြိုးစားကြည့်ပါဦး^^`;
     } else if (userGuess < randomNumber) {
@@ -41,7 +50,7 @@ let guess = () => {
   document.querySelector(".guess").value = "";
 };
 let restart = () => {
-  randomNumber = Math.floor(Math.random() * 100) + 1;
+  randomNumber = Math.floor(Math.random() * 70) + 1;
   console.log(randomNumber);
   chance = 5;
   count = 0;
