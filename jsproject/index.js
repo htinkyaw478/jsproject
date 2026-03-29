@@ -49,4 +49,6 @@ let restart = () => {
   errMessage2.textContent = "ထပ်ကြိုးစားခွင့် : ";
   errMessage3.textContent = "ခန့်မှန်းပြီးတဲ့ number : ";
   errMessage1.textContent = "";
+  btn_1.disabled = "false";
+  document.querySelector(".guess").value = "";
 }
