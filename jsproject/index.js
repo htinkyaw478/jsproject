@@ -7,7 +7,7 @@ let btn_2 = document.getElementById("btn-2");
 
 // console.log(errMessage1,errMessage2)
 let guessedNum = [];
-let chance = 10;
+let chance =5;
 let count = 0;
 let randomNumber = Math.floor(Math.random() * 50) + 1;
 console.log(randomNumber);
@@ -43,7 +43,7 @@ let guess = () => {
 let restart = () => {
   randomNumber = Math.floor(Math.random() * 50) + 1;
   console.log(randomNumber);
-  chance = 10;
+  chance = 5;
   count = 0;
   guessedNum =[];
   errMessage2.textContent = "ထပ်ကြိုးစားခွင့် : ";
