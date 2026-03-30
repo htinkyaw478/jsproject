@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: #020024; */
+        background: #020024;
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 11%,
+          rgba(0, 212, 255, 1) 94%
+        );
+      }
+      div {
+        text-align: center;
+        color: white;
+        width: 350px;
+        height: 150px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        padding: 20px;
+      }
+      #clock {
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      #clock span {
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+      #date {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <p id="clock"><span></span></p>
+        <p id="date"></p>
+      </div>
+    </main>
+  </body>
+  <!-- <script src="/index.js"></script> -->
+  <script>
+    function updateClock() {
+      let currentTime = new Date();
+    // console.log(currentTime);
+    let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
+    let day = currentTime.getDate();
+    let month = currentTime.getMonth() + 1;
+    let year = currentTime.getFullYear();
+
+    let clock = document.getElementById("clock");
+    let date = document.getElementById("date");
+
+    // conditional statement
+    let amPm = hours > 12 ? "PM" : "AM";
+    hours = hours % 12 || 12; // Convert to 12-hour format
+    let secondZero = seconds < 10 ? "0"+seconds : seconds;
+    let minuteZero = minutes < 10 ? "0"+minutes : minutes;
+    let hourZero = hours < 10 ? "0"+hours : hours;
+    let dayArr = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    let monthArr = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    let dayName = dayArr[currentTime.getDay()];
+    // console.log(dayName);
+    let monthName = monthArr[month - 1];
+    // console.log(monthName);
+
+    clock.innerHTML = `${hourZero} : ${minuteZero} : ${secondZero} <span>${amPm}</span>`;
+    date.innerHTML = `${dayName}, ${monthName} ${day}, ${year}`;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // console.log(hours, minutes, seconds, day, month, year);
+  </script>
+</html>
