@@ -12,15 +12,15 @@ let count = 0;
 let randomNumber = Math.floor(Math.random() * 70) + 1;
 console.log(randomNumber);
 
-document.querySelector(".guess").addEventListener("keydown", function (event) {
-  // Check if the key pressed is "Enter"
-  if (event.key === "Enter") {
-    // Cancel the default action, if needed (prevents form submission/page reload)
-    event.preventDefault();
-    // Trigger the button element with a click
-    guess();
-  }
-});
+// document.querySelector(".guess").addEventListener("keydown", function (event) {
+//   // Check if the key pressed is "Enter"
+//   if (event.key === "Enter") {
+//     // Cancel the default action, if needed (prevents form submission/page reload)
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     guess();
+//   }
+// });
 let guess = () => {
   count += 1;
   chance -= 1;
@@ -41,7 +41,7 @@ let guess = () => {
     }
   }
   if (chance <= 0) {
-      errMessage1.textContent = `Game Over! ၁၀ကြိမ်ပြည့်သွားပါပြီ။ Restart ပြန်လုပ်ပါ။`;
+      errMessage1.textContent = `Game Over! ၅ကြိမ်ပြည့်သွားပါပြီ။ Restart ပြန်လုပ်ပါ။`;
       btn_1.disabled = "true";
     }
   guessedNum.push(userGuess);
@@ -49,6 +49,19 @@ let guess = () => {
   errMessage3.textContent = "ခန့်မှန်းပြီးတဲ့ number : "+guessedNum;
   document.querySelector(".guess").value = "";
 };
+
+document.querySelector(".guess").addEventListener("keydown", function (event) {
+  // Check if the key pressed is "Enter"
+  if (event.key === "Enter") {
+    // alert("hello");
+    // Cancel the default action, if needed (prevents form submission/page reload)
+    event.preventDefault();
+    if (chance > 0) {
+      // Trigger the button element with a click
+      guess();
+    }
+  }
+});
 let restart = () => {
   randomNumber = Math.floor(Math.random() * 70) + 1;
   console.log(randomNumber);
