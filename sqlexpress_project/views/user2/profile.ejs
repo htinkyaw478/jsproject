@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+    <div class="p-5">
+
+        <% if (message !=null) { %>
+            <div class="alert alert-danger text-center">
+                <%= message %>
+            </div>
+            <% } %>
+
+                <h1>User Profile</h1>
+
+                <% if (user !=null) { %>
+                    <p>Name : <%= user.name %> (Email : <%= user.email %>)
+                                <div class="d-flex gap-1 p-2">
+
+                                    <a href="/users/edit/<%= user.id %>" class="btn btn-warning">Edit</a>
+                                    <form action="/users/delete/<%= user.id %>" method="POST" style="display: inline"
+                                        onsubmit="return confirm('Are you sure you want to delete this user?')">
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </div>
+                    </p>
+                    <% } %>
+    </div>
+    <%- include('../partials/footer') %>

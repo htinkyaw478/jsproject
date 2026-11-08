@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+<div class="container my-5">
+  <h1 class="text-center mb-5">Welcome Home Page</h1>
+  <% if (posts && posts.length > 0) { %>
+    <% posts.forEach(post => { %>
+      <div class="card mb-4 shadow-sm rounded-3">
+        <div class="card-body p-4">
+          <% if (post.photo) { %>
+            <div class="mb-3">
+              <img
+                src="/uploads/<%= post.photo %>"
+                alt="<%= post.title %>"
+                class="img-fluid rounded"
+                style="max-width: 400px; height: auto"
+              />
+            </div>
+          <% } %>
+          <h3>
+            <%= post.title %>
+          </h3>
+          <p class="text-muted">
+            <% if (post.author) { %>By <%= post.author %> &bull; <% } %>
+            create time: <%= post.create_time || post.created_at %>
+          </p>
+          <p>
+            <%= post.content %>
+          </p>
+        </div>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p class="text-center text-muted">No posts found</p>
+  <% } %>
+</div>
+<div>
+  <% if (typeof totalPages !== 'undefined' && totalPages > 1) { %>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <% for (let i = 1; i <= totalPages; i++) { %>
+          <li class="page-item <%= (typeof currentPage !== 'undefined' && i === currentPage) ? 'active' : '' %>">
+            <a class="page-link"
+               href="<%= (typeof baseUrl !== 'undefined' ? baseUrl : '/') %><%= (typeof baseUrl !== 'undefined' && baseUrl.includes('?')) ? '&' : '?' %>page=<%= i %>">
+              <%= i %>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+    </nav>
+  <% } %>
+</div>
+<%- include('partials/footer') %>

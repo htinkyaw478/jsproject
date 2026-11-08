@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+    <h1>User List</h1>
+    <ul>
+      <% if (users.length === 0) { %>
+        <li>No users found</li>
+      <% } %>
+      <% users.forEach(user => { %>
+        <li>Name : <%= user.name %> (Email : <%= user.email %>)
+
+        <a href="/users/edit/<%= user.id %>" class="btn btn-warning">Edit</a>
+          <form
+            action="/users/delete/<%= user.id %>"
+            method="POST"
+            style="display: inline"
+            onsubmit="return confirm('Are you sure you want to delete this user?')"
+          >
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+        </li>
+      <% }) %>
+    </ul>
+<%- include('../partials/footer') %>
