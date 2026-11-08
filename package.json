@@ -1,8 +1,14 @@
 {
   "dependencies": {
+    "bun": "^1.3.14",
     "nodejs": "^0.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
+  },
+  "scripts": {
+    "start": "bunx tsc -p typescript/tsconfig.json --noEmit && bun typescript/app.ts",
+    "run-ts": "bunx tsc -p typescript/tsconfig.json --noEmit && bun",
+    "dev:nodemon": "nodemon --watch typescript --ext ts --exec \"bunx tsc -p typescript/tsconfig.json --noEmit && bun typescript/app.ts\""
   }
 }

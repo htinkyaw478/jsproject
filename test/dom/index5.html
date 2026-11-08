@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            padding: 20px;
+            border: 2px solid red;
+            margin: auto;
+            text-align: justify;
+        }
+        span{
+            display: none;
+        }
+        .show{display: inline;}
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus eos nisi doloremque est minus id labore, temporibus expedita ullam accusantium, ad culpa modi consequuntur repellat numquam dolorem. Aliquid, eos pariatur.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus impedit a explicabo ab id nisi officiis, placeat dicta quis hic ullam laudantium ipsa alias est aut tempora, rem ipsam?</span></p>
+        <button>Show more</button>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus eos nisi doloremque est minus id labore, temporibus expedita ullam accusantium, ad culpa modi consequuntur repellat numquam dolorem. Aliquid, eos pariatur.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus impedit a explicabo ab id nisi officiis, placeat dicta quis hic ullam laudantium ipsa alias est aut tempora, rem ipsam?</span></p>
+        <button>Show more</button>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus eos nisi doloremque est minus id labore, temporibus expedita ullam accusantium, ad culpa modi consequuntur repellat numquam dolorem. Aliquid, eos pariatur.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus impedit a explicabo ab id nisi officiis, placeat dicta quis hic ullam laudantium ipsa alias est aut tempora, rem ipsam?</span></p>
+        <button>Show more</button>
+    </div>
+    <script>
+    // const span = document.querySelector("span");
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => {
+        button.addEventListener("click",function(){
+            const span = this.previousElementSibling.children[0];
+            span.classList.toggle("show");
+            if(span.classList.contains("show")){
+                button.textContent = "Hide";
+            }else{
+                button.textContent = "Show more";
+            }
+        })
+    })
+    // button.addEventListener("click",()=>{
+    //     span.classList.toggle("show");
+    //     if(span.classList.contains("show")){
+    //         button.textContent ="Hide";
+    //     }else{
+    //         button.textContent = "Show more";
+    //     }
+    // })
+    
+    </script>
+</body>
+</html>

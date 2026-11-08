@@ -1,0 +1,243 @@
+{
+  "todos": [
+    {
+      "id": "6aad",
+      "title": "learn python",
+      "completed": false
+    },
+    {
+      "id": "9145",
+      "title": "TO LEARN AI COURSE",
+      "completed": false
+    },
+    {
+      "id": "efc7",
+      "title": "To Read A book",
+      "completed": true
+    },
+    {
+      "id": "5851",
+      "title": "hello title2"
+    },
+    {
+      "id": "57b1",
+      "title": "To Read a Book",
+      "completed": false
+    },
+    {
+      "id": "1752927811152",
+      "title": "To Eat",
+      "completed": false
+    },
+    {
+      "id": "f38c9293-2383-41bd-9ee2-b8228149947b",
+      "title": "To Sleep",
+      "completed": false
+    },
+    {
+      "id": "290738b9-9c97-4e40-beb4-1482844b95fa",
+      "title": "to watch a game show",
+      "completed": "false"
+    },
+    {
+      "id": "bc831956-094b-4af1-bae8-eafdc2c352e0",
+      "title": "Unde consequatur Fu",
+      "completed": "false"
+    },
+    {
+      "id": "d546c9b9-7d99-497c-8f8b-f556a746e1bf",
+      "completed": false
+    },
+    {
+      "id": "a4cd309b-6782-40b0-a185-d0c7d1d13604"
+    },
+    {
+      "id": "2897"
+    },
+    {
+      "id": "5d84",
+      "title": "product two ",
+      "completed": false
+    },
+    {
+      "id": "267e",
+      "title": "product two ",
+      "name": "bobo",
+      "age": 20,
+      "completed": false
+    },
+    {
+      "id": "2d22",
+      "title": "product two ",
+      "completed": false
+    },
+    {
+      "id": "2525",
+      "title": "product One ",
+      "completed": true
+    },
+    {
+      "id": "742c",
+      "title": "product from api ",
+      "completed": true
+    },
+    {
+      "id": "588050ab-9e17-4ecd-bf1a-7e0e91a3475c",
+      "title": "product from api ",
+      "completed": true
+    },
+    {
+      "id": "0eb02827-495d-4846-ae2c-0a83553b8eb4",
+      "title": "product from api ",
+      "completed": true
+    },
+    {
+      "id": "6869",
+      "title": "product from api ",
+      "completed": true
+    },
+    {
+      "id": "56d6",
+      "title": "product from api ",
+      "completed": true,
+      "name": "bobo",
+      "age": 20
+    },
+    {
+      "id": "c8f551e0-39ce-41f1-8776-f1d7b1c4612f",
+      "title": "product from api ",
+      "completed": true,
+      "name": "bobo",
+      "age": 20
+    },
+    {
+      "id": "c46ce04e-d22c-4359-9fc5-79018b251f90",
+      "title": "PRODUCT FROM API",
+      "completed": true,
+      "name": "bobo",
+      "age": 20
+    },
+    {
+      "id": "4b9f5ff2-e999-4268-bbd9-2a1c621a1de6",
+      "title": "HELLO",
+      "completed": true
+    },
+    {
+      "id": "7fe1afc0-fa27-4c8d-b343-6582619337d5",
+      "title": "HELLO",
+      "completed": false
+    },
+    {
+      "title": "TO LEARN AI COURSE",
+      "completed": true,
+      "id": "ELLu_37ToFY"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password",
+      "age": 30,
+      "phone": "123-456-7890",
+      "address": "123 Main St, Anytown, USA"
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "password": "password",
+      "age": 30,
+      "phone": "123-456-7890",
+      "address": "123 Main St, Anytown, USA"
+    },
+    {
+      "id": "3",
+      "name": "Bob Doe",
+      "email": "bob@example.com",
+      "password": "password",
+      "age": 30,
+      "phone": "123-456-7890",
+      "address": "123 Main St, Anytown, USA"
+    },
+    {
+      "id": "4",
+      "name": "Charlie Doe",
+      "email": "charlie@example.com",
+      "password": "password",
+      "age": 30,
+      "phone": "123-456-7890",
+      "address": "123 Main St, Anytown, USA"
+    },
+    {
+      "id": "5",
+      "name": "David Doe",
+      "email": "david@example.com",
+      "password": "password",
+      "age": 30,
+      "phone": "123-456-7890",
+      "address": "123 Main St, Anytown, USA"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "photo": "http://picsum.photos/200",
+      "title": "Post 1",
+      "body": "This is the body of post 1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "photo": "http://picsum.photos/200",
+      "title": "Post 2",
+      "body": "This is the body of post 2",
+      "userId": "2"
+    },
+    {
+      "id": "3",
+      "photo": "http://picsum.photos/200",
+      "title": "Post 3",
+      "body": "This is the body of post 3",
+      "userId": "3"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "price": 10,
+      "image": "https://example.com/product1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 20,
+      "image": "https://example.com/product2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Product 3",
+      "price": 30,
+      "image": "https://example.com/product3.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "price": 10,
+      "image": "https://example.com/product1.jpg",
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 20,
+      "image": "https://example.com/product2.jpg",
+      "quantity": 1
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

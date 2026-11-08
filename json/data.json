@@ -1,0 +1,162 @@
+{
+    "data": [
+        {
+            "name": "Select Country",
+            "id": ""
+        },
+        {
+            "name": "Pakistan",
+            "id": "pk"
+        },
+        {
+            "name" : "India",
+            "id" : "in"
+        },
+        {
+            "name" : "Bangladesh",
+            "id" : "bd"
+        },
+        {
+            "name" : "Nepal",
+            "id" : "np"
+        },
+        {
+            "name" : "U.A.E",
+            "id" : "ae"
+        },
+        {
+            "name" : "Saudi Arabia",
+            "id" : "sa"
+        },
+        {
+            "name" : "U.S.A",
+            "id" : "us"
+        },
+        {
+            "name" : "U.K",
+            "id" : "uk"
+        },
+        {
+            "name" : "China",
+            "id" : "cn"
+        },
+        {
+            "name" : "Japan",
+            "id" : "jp"
+        },
+        {
+            "name" : "Canada",
+            "id" : "ca"
+        },
+        {
+            "name" : "Australia",
+            "id" : "au"
+        },
+        {
+            "name" : "Germany",
+            "id" : "de"
+        },
+        {
+            "name" : "France",
+            "id" : "fr"
+        },
+        {
+            "name" : "Italy",
+            "id" : "it"
+        },
+        {
+            "name" : "Pakistan",
+            "id" : "pk"
+        },
+        {
+            "name" : "India",
+            "id" : "in"
+        },
+        {
+            "name" : "Bangladesh",
+            "id" : "bd"
+        },
+        {
+            "name" : "Nepal",
+            "id" : "np"
+        },
+        {
+            "name" : "U.A.E",
+            "id" : "ae"
+        },
+        {
+            "name" : "Saudi Arabia",
+            "id" : "sa"
+        },
+        {
+            "name" : "U.S.A",
+            "id" : "us"
+        },
+        {
+            "name" : "U.K",
+            "id" : "uk"
+        },
+        {
+            "name" : "China",
+            "id" : "cn"
+        },
+        {
+            "name" : "Japan",
+            "id" : "jp"
+        },
+        {
+            "name" : "Canada",
+            "id" : "ca"
+        },
+        {
+            "name" : "Australia",
+            "id" : "au"
+        },
+        {
+            "name" : "Germany",
+            "id" : "de"
+        },
+        {
+            "name" : "France",
+            "id" : "fr"
+        },
+        {
+            "name" : "Myanmar",
+            "id" : "mm"
+        }
+    ],
+    "cites" : [
+        {
+            "name" : "Karachi",
+            "country_id" : "pk"
+        },
+        {
+            "name" : "Lahore",
+            "country_id" : "pk"
+        },
+        {
+            "name" : "Islamabad",
+            "country_id" : "pk"
+        },
+        {
+            "name" : "Rawalpindi",
+            "country_id" : "pk"
+        },
+        {
+            "name" : "Karachi",
+            "country_id" : "pk"
+        },
+        {
+            "name" : "Lahore",
+            "country_id" : "pk"
+        },
+        {
+            "name" : "Islamabad",
+            "country_id" : "pk"
+        },
+        {
+            "name" : "Rawalpindi",
+            "country_id" : "pk"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            padding: 20px;
+            margin: 20px;
+        }
+        p{
+            border: 2px solid green;
+            padding: 20px;
+            margin: 20px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const para = document.createElement("p");
+        para.textContent = "Hello World";
+        document.body.appendChild(para);
+        const div = document.createElement("div");
+        div.classList.add("container");
+        document.body.prepend(div);
+        // div.textContent = "hello";
+        const img = document.createElement("img");
+        img.src = "https://www.w3schools.com/w3images/lights.jpg";
+        img.alt = "lights";
+        div.appendChild(img);
+        const link = document.createElement("a");
+        link.href = "https://www.google.com";
+        link.textContent = "Google";
+        link.id = "link";
+        div.prepend(link);
+        const input = document.createElement("input");
+        input.setAttribute("type", "text");
+        input.setAttribute("placeholder", "enter your name");
+        div.append(input);
+
+    </script>
+</body>
+</html>
